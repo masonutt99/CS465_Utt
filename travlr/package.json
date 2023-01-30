@@ -14,7 +14,7 @@
     "http-errors": "~1.6.3",
     "mongoose": "^6.9.0",
     "morgan": "~1.9.1",
-    "seedgoose": "^2.0.2",
+    "seedgoose":"^2.0.2",
     "update": "^0.7.4"
   }
 }

@@ -1,3 +1,4 @@
+
 // var fs = require('fs');
 
 // var trips = JSON.parse(fs.readFileSync('./data/trips.json', 'utf8'));
@@ -42,9 +43,9 @@ const request = require("request");
      url: `${apiOptions.server}${path}`,
      method: "GET",
      json: {},
-   };
-   console.info(" >> travelcontroller.travelList calling" + requestOptions.url);
-   request(requestOptions, (err, { statusCode }, body) => {
+};
+console.info(" >> travelcontroller.travelList calling" + requestOptions.url);
+request(requestOptions, (err, { statusCode }, body) => {
      if (err) {
        console.error(err);
      }

@@ -1,11 +1,3 @@
-<<<<<<< Updated upstream
-/* GET travel view */
-const travel = (req, res) => {
-    res.render('travel', { title: 'Travlr Getaways' });
-   };
-   module.exports = {
-    travel
-=======
 // var fs = require('fs');
 
 // var trips = JSON.parse(fs.readFileSync('./data/trips.json', 'utf8'));
@@ -50,7 +42,6 @@ const request = require("request");
      url: `${apiOptions.server}${path}`,
      method: "GET",
      json: {},
->>>>>>> Stashed changes
    };
    console.info(" >> travelcontroller.travelList calling" + requestOptions.url);
    request(requestOptions, (err, { statusCode }, body) => {

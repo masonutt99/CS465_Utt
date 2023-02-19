@@ -49,14 +49,16 @@ app.use("/api", (req, res, next) => {
   next();
 });
 
-app.use("/", indexRouter);
-app.use("/users", usersRouter);
-app.use("/travel", travelRouter);
-app.use("/rooms", roomsRouter);
-app.use("/news", newsRouter);
-app.use("/meals", mealsRouter);
-app.use("/contact", contactRouter);
-app.use("/about", aboutRouter);
+
+app.use('/', indexRouter);
+app.use('/index', indexRouter);
+app.use('/users', usersRouter);
+app.use('/travel', travelRouter);
+app.use('/rooms', roomsRouter);
+app.use('/meals', mealsRouter);
+app.use('/news', newsRouter);
+app.use('/abouts', aboutRouter);
+app.use('/contact', contactRouter);
 
 app.use("/api", apiRouter);
 

@@ -1,12 +1,9 @@
-var fs = require('fs');
-
-// var about = JSON.parse(fs.readFileSync('./data/about.json', 'utf8'));
-// var about2 = JSON.parse(fs.readFileSync('./data/about2.json', 'utf8'));
-
-/* GET travel view */
+/* GET Contact View */
 const contact = (req, res) => {
-    res.render('contact', { title: 'Travlr Getaways'});
-   };
-   module.exports = {
-    contact
-   };
+  pageTitle = process.env.npm_package_description + " - Contact"; // process.env.npm_package_description can only be accessed if you use 'npm start' *nodemon will not work
+  res.render("contact", { title: pageTitle });
+};
+
+module.exports = {
+  contact,
+};
